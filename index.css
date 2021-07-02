@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+
+/*  o asterisco serve para selecionar toda a pagina*/
+/* box sizing do tipo border box e usado para  alterar e definir o tamanho da pagina total*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header li a {
+    color: #99a0b0;
+    font-weight: lighter; 
+    text-transform: uppercase;  
+}
+header {
+    border-bottom: 1px solid #ccc;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: fixed;  /* position fixed pro cabecalho fixar ao scroll a pagina */
+    width: 100%;
+    height: 3em;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 3em;
+}
+
+.dark {
+    background-color: #2B313B;
+    color: #fcfcfd;
+}
+
+.light {
+background-color: #fcfcfd;
+color:#2B313B;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;   
+}/* serve para mudar a posicao da foto na pagina */
+
+
+a {
+    text-decoration: none;
+} /* tira o sublinhado dos links*/
+
+section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+} /* text align para centralizar o texto da pagina toda*/
+/*p no section pai, padding bottom aqui foi usado para criar espacos entre as secoes 
+(projeto, nome) */
+
+section h3 {
+    font-size: 1.7em;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+}
+section img {
+    width: 100%;
+    max-width: 300px;
+}
+/* no img width eu estou limitando o tamnho dela para 100% do container 
+mas nao ultrapassa 300px todas as img do copy */
+.identity {
+    background-color: #4285f4;
+    color:#FFF;
+    padding: 10em 2em 7em; 
+}
+/* o padding ali serve para aumentar a parte azul do meu nome */
+
+.identity h1 {
+font-size:2.5em;
+margin-bottom: 0.7em;
+}
+
+/*esse margin bottom serve para criar um esapco entre meu nome e front end */
+.identity h2 {
+font-size: 1.5em;
+font-weight: ligther;
+}
+
+.projects-header {
+    float:left;
+    width: 30%;
+}
+/* o Float e uma propriedade que serve para posicionar algo na tela, seja em bloco ou em linha. 
+dividir partes do grid */
+
+.projects-header h3 { 
+margin-top: 1em;
+}
+/* o margin to do h3 e pra dar um espacamento da lampada */
+.projects {
+    margin-left: 40%;
+}
+.projects li {
+    background-color: gray;
+    }
+
+.projects li {
+    background-color: #6f7688;
+    padding: 1em;
+    margin-bottom: 2em;
+}/*Quando eu coloco padding somente eu quero todos os lados do mesmo tamanho */
+/* quando coloco a margem aqui eu separo as caixinhas uma da outra */
+
+.projects li a {
+    color: #FFF;
+    font-size: 1.3em;
+}
+.projects li p {
+    color: #d2d6e2;
+    margin-top: 1em;
+    height: 1em;
+    line-height: 1.2;
+} /* line height serve para dar espacamento */
+
+/* no acima, o margin top serviu para criar um espaco no titulo pro texto*/
+
+#sobre {
+    position: relative;
+} /* marco zero para a copy entender que quero ela no lado esquerdo 
+quando uso o position absolute, e depende da secao que foi colocado
+ou seja, se eu quiser que fique a 10% da secao container, eu define aqui */
+#sobre p.bio {
+   /* color: #4285f4;*/
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+#sobre p.bio {
+  /*  background-color: lightblue; */
+
+}
+
+#sobre p.text {
+    margin: 1em;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#sobre p.bio, #sobre p.text {
+width: 50%;
+}
+
+/* foi criado uma nova class text pra isolar minha bio de ser aplicada a margin */
+p {
+font-size: 14px;
+}
+
+#sobre img {
+    width:100px;
+    position: absolute;
+    top: 1em;
+    right: 10%;
+}
+
+#projetos img {
+    width: 100px;
+}
+#contatos li {
+    display: inline-block;
+}
+
+#contatos li a {
+    display: inline-block;
+    margin: 1em;
+    background-image: url('./Gmail-Logo.png');
+    background-image: url('./insta.png');
+}
+
+#contatos.email {
+    background-image: url('./Gmail-Logo.png');
+}
+
+#contatos.instagram {
+    background-image: url('./insta.png');
+}
+footer {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+

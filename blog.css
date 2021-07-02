@@ -1,0 +1,146 @@
+blog.css
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+.light {
+    background-color: #99a0b0
+    color: #FFF;
+}
+
+.dark {
+    background-color: #99a0b0;
+    color: snow;
+    padding-left: 1em;
+}
+
+.dark p {
+    font-weight: bold;
+}
+
+.dark li a {
+    color: snow;
+    padding-left: 2em;
+}
+
+header {
+    font-size: uppercase;
+    padding-bottom: 1.5em;
+    padding-left: 2em;
+    padding-top: 0.5em;  
+    position: fixed;  /* position fixed pro cabecalho fixar ao scroll a pagina */
+    width: 100%;
+    height: 1em; 
+} 
+
+header a {
+    color: snow;
+    font-weight: lighter;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: uppercase;
+    font-size: 1.7em;
+    text-align: center;
+    
+}
+h2 {
+    font-size: 1em; 
+    text-align: center; 
+}
+
+body {
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+section {
+    padding-bottom: 3em;
+    padding-top: 3em;
+    box-sizing: 2em;
+}
+
+section li {
+    padding-bottom: 1em;
+    color: gray;   
+}
+
+section p {
+    padding-bottom: 0.5em;
+    color: bold;
+    padding-left: 1em;
+}
+
+section li p {
+    width: 1200px;
+    color: bold;
+}
+section strong {
+    font-weight: bold;
+}
+section h1 {
+    background-color: #4285f4;
+    padding-bottom: 2em; 
+    color: white;
+    padding-top: 1em;
+    font-size: 1.5em;
+    padding-left: 1em;   
+}
+
+section h2 {
+    font-size: 1em;
+    background-color: #4285f4;
+    padding-bottom: 2em; 
+    color: white;
+    padding-left: 1.5em;
+}
+
+
+.light-container {
+    padding-left: 550%;
+    padding-right: 550%;   
+} 
+
+.pe {
+    padding-left: 1em;
+    font-weight: lighter;
+}
+
+.exp li p {
+    padding-bottom: 2em;
+    margin-right:2em;
+}
+
+.projects {
+    margin: 1%;
+    text-align: left;
+    padding: 1em; 
+    
+}
+
+.projects li {
+    background-color: #2B313B;  /*  pra separar os quadrantes o background tem que estar aqui no li*/
+    color: snow; 
+    padding: 1em;  
+    margin-bottom: 2em;   
+}
+
+
+#foto img {
+    float: right; /* serve pra flutuar a foto para a direita da pagina */
+    width: 100px;  
+    padding-right: 1em;   
+     
+}
+
+.clearfix{
+    clear:both; /*  serve para limpar a bagunca que o float deixou, (desconfigurar textos e etc)*/
+}
+
+footer {
+    padding-left: 0.5em;
+}
